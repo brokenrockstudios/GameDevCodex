@@ -14,3 +14,13 @@ Use one of these templates
 * [UStruct](Struct.h)
 * [UEnum](Enum.h)
 
+
+## Bonus tips
+
+Rider IDE doesn't allow manually editing/creating the cpp.
+It is partially automated by referencing the Unreal Engine installed location
+e.g. `C:\Program Files\Epic Games\UE_5.5\Engine\Content\Editor\Templates`
+There you will find things like ActorClass.h.template and ActorClass.cpp.template
+
+You can add your own there.
+
