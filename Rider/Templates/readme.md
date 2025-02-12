@@ -1,7 +1,9 @@
 
-In Rider you can create your own file templates for quicker creation.
+In Rider you can create your own file templates for quicker file creation.
 
-They have many already, but they don't have one for Structs or Enums for some reason.
+Rider already includes Actor, ActorComponent, Character, Empty, Pawn, Interface, and many others.
+
+They don't have one for Structs or Enums for some reason.
 
 1. Go to Settings -> Editor -> File Templates -> Unreal Engine
 2. In top right click the +
