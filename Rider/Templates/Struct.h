@@ -4,6 +4,7 @@ $COPYRIGHT_LINE$
 
 #include "CoreMinimal.h"
 $BASE_CLASS_INCLUDE_DIRECTIVE$
+#include "$UNPREFIXED_CLASS_NAME$.generated.h"
 
 /**
  *
