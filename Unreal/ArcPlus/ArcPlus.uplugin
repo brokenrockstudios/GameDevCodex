@@ -1,0 +1,30 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "ArcPlus",
+	"Description": "This folder contains code snippets and reference implementations for extending ArcInventory to support variable grid-sized items. The implementation draws inspiration from inventory systems found in popular games like Diablo and Escape From Tarkov, where items can occupy different numbers of grid slots based on their size and shape.",
+	"Category": "Other",
+	"CreatedBy": "Namfrog",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": true,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "ArcPlus",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "ArcInventory",
+			"Enabled": true
+		}
+	]
+}
