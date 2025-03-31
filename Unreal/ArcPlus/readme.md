@@ -1,12 +1,3 @@
-This is a rough draft code needed to extend [ArcInventory](https://www.fab.com/listings/ee4027dd-0a9f-4ac9-a7e6-78994f67c133) 
-to enable variable grid sized items similiar to games like Diablo or EscapeFromTarkov.
-
-Note: This code isn't usable as-is. But this is being shared more for reference/educational/pseudocode.
-
-ArcInventory has a solid backend inspired similiar to Lyra's fragment system. 
-
-
-
 # ArcInventory Extension: Variable Grid System
 
 ## Overview
@@ -29,4 +20,10 @@ This extension leverages ArcInventory's robust backend architecture (which utili
 License
 MIT License for my code shared here.    
 ArcInventory is licensed under fab's purchase agreement and Copyright 2017-2024 Garrett Fleenor & Puny Human, All Rights Reserved.
+
+## Dependencies
+
+[ArcInventory](https://www.fab.com/listings/ee4027dd-0a9f-4ac9-a7e6-78994f67c133) has a solid backend inspired similiar to Lyra's fragment system. 
+
+
 
