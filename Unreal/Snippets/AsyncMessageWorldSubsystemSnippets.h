@@ -18,8 +18,15 @@ namespace RockMessage
 	// 	FConstStructView::Make(MyStruct)
 	// );
 	template <typename T>
-	void Broadcast(UWorld* World, FGameplayTag Channel, const T& Payload, TWeakPtr<FAsyncMessageBindingEndpoint> BindingEndpoint = nullptr)
+	void Broadcast(UObject* WorldContextObject, FGameplayTag Channel, const T& Payload, TWeakPtr<FAsyncMessageBindingEndpoint> BindingEndpoint = nullptr)
 	{
+		UWorld* World = GEngine->GetWorldFromContextObject(WorldContextObject, EGetWorldErrorMode::LogAndReturnNull);
+		if (!World)
+		{
+			UE_LOG(LogAsyncMessageSystem, Error, TEXT("[%hs] Failed to queue message '%s' for broadcasting: Unable to find a world."),
+			       __func__, *Channel.ToString());
+			return;
+		}
 		auto AsyncMessageSystem = UAsyncMessageWorldSubsystem::GetSharedMessageSystem(World);
 		if (!AsyncMessageSystem)
 		{
